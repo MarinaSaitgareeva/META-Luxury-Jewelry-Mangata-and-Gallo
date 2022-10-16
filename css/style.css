@@ -37,3 +37,76 @@ body {
   line-height: 1.3;
   text-rendering: optimizeSpeed;
 }
+
+header {
+  position: fixed;
+  top: 0;
+
+  z-index: 99;
+  width: 100%;
+
+  display: flex;
+
+  background-color: #00000064;
+
+  padding: 1.5rem 1rem;
+}
+
+header > img {
+  display: inline-block;
+  width: 70%;
+}
+
+header > div {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0.5rem;
+}
+
+header p {
+  grid-column: span 3;
+}
+
+header a {
+  text-decoration: none;
+}
+
+
+/* Navigation bar content */
+nav {
+  position: fixed;
+  top: 7rem;
+  z-index: 99;
+  width: 100%;
+}
+
+nav > ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+
+
+/* Main content */
+main {
+  margin-top: 10rem;
+}
+
+section {
+  display: flex;
+}
+
+footer {
+  
+  display: flex;
+
+  background-color: #00000064;
+}
