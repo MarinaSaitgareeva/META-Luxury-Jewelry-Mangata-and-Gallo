@@ -25,7 +25,8 @@
     <ul id="nav-list">
       <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
       <li class="nav-item"><a class="nav-link" href="#promotion">Promotion</a></li>
-      <li class="nav-item"><a class="nav-link" href="#info">Products</a></li>
+      <li class="nav-item"><a class="nav-link" href="" target="_blank">Products</a></li>
+      <li class="nav-item"><a class="nav-link" href="" target="_blank">Sale</a></li>
       <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
       <li class="nav-item"><a class="nav-link" href="#contact">Contact us</a></li>
       <li class="nav-item"><a class="nav-link" href="#book-appointment">Book appointment</a></li>
@@ -88,7 +89,7 @@
     <section id="contact">
       <img id="map" src="images/map.png" alt="address">
       <div id="address">
-        <p>Find us: <span class="tel-email">Austin, Texas</span></p>
+        <a href="https://www.google.com/maps/place/Austin,+TX/@30.3074624,-98.0359321,10z/data=!3m1!4b1!4m5!3m4!1s0x8644b599a0cc032f:0x5d9b464bd469d57a!8m2!3d30.267153!4d-97.7430608" target="_blank">Find us: <span class="tel-email">Austin, Texas</span></a>
         <a href="tel:5556667777">Call us: <span class="tel-email">555-666-7777</span></a>
         <a id="email" href = "mailto: MagnataAndGallo@gmail.com">Email us: <span class="tel-email">MagnataAndGallo@gmail.com</span></a>
         <div id="operational-hours">
@@ -102,7 +103,7 @@
       <div id="subscribe">
         <form id="subscription-form" action="">
           <label id="subscribe-label" for="subscribe">Get Exclusive Offers and News</label>
-          <input id="subscribe-input" type="text" placeholder="Your Email">
+          <input id="subscribe-input" name="email" type="email" placeholder="Your Email" required>
           <button id="subscribe-btn">SIGN UP</button>
         </form>
       
@@ -129,7 +130,85 @@
     <hr class="separate-line">
 
     <section id="book-appointment">
-      <form action=""></form>
+      <h3 id="book-appointment-title">Book Appointment</h3>
+
+      <form id="appointment-form" action="post">
+        <div id="your-appointment">
+          <p class="form-title">YOUR APPOINTMENT</p>
+
+          <label for="type">Type: </label>
+          <select id="type" name="type">
+            <option value="online">Online</option>
+            <option value="in-store">In-store</option>
+          </select>
+          <br>
+  
+          <label for="date">Date: </label>
+          <input id="date" type="date" required>
+          <br>
+  
+          <label for="time">Time: </label>
+          <select id="time" name="time">
+            <option value="8:00">8:00</option>
+            <option value="9:00">9:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+          </select>
+          <br>
+
+          <p id="area-of-interest">Area of Interest: </p>
+          <input type="checkbox" id="engagement-ring" name="engagement-ring" value="Engagement ring">
+          <label for="engagement-ring"> Engagement ring</label>
+          <br>
+          <input type="checkbox" id="wedding-ring" name="wedding-ring" value="Wedding ring">
+          <label for="wedding-ring"> Wedding ring</label>
+          <br>
+          <input type="checkbox" id="anniversary-gift" name="anniversary-gift" value="Anniversary gift">
+          <label for="anniversary-gift"> Anniversary gift</label>
+        </div>
+        
+        <div id="your-details">
+          <p class="form-title">YOUR DETAILS</p>
+          <label for="title">Title: </label>
+          <select id="title" name="title">
+            <option value="Mr">Mr</option>
+            <option value="Ms">Ms</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Miss">Miss</option>
+          </select>
+          <br>
+  
+          <input id="first-name" name="first-name" type="text" placeholder="First name" required>
+          <input id="last-name" name="last-name" type="text" placeholder="Last name" required>
+          <br>
+  
+          <input id="email" type="email" name="email" placeholder="Email" required>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Telephone number" required>
+          <br>
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="subscribe-checkbox" name="subscribe-checkbox" value="Subscribe Checkbox">
+            <span>
+              <label id="subscribe-checkbox-label" for="subscribe-checkbox"> I would like to receive updates from Mangata & Gallo using any of the method(s) that I have provided above. You can unsubscribe at any time.</label>
+            </span>
+          </div>
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="privacy-checkbox" name="privacy-checkbox" value="Privacy Checkbox">
+            <span>
+              <label id="privacy-checkbox-label" for="privacy-checkbox"> *By submitting this form, I certify that I have read and accepted the Privacy Policy of Mangata & Gallo.</label>
+            </span>
+          </div>
+        </div>
+
+        <button id="request-appointment-btn">Request Appointment</button>
+        
+      </form>
     </section>
 
   </main>
