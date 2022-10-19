@@ -24,12 +24,12 @@
   <nav>
     <ul id="nav-list">
       <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="#promotion">Promotion</a></li>
+      <li id="promotion-nav" class="nav-item"><a class="nav-link" href="#promotion">Promotion</a></li>
       <li class="nav-item"><a class="nav-link" href="" target="_blank">Products</a></li>
       <li class="nav-item"><a class="nav-link" href="" target="_blank">Sale</a></li>
       <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
       <li class="nav-item"><a class="nav-link" href="#contact">Contact us</a></li>
-      <li class="nav-item"><a class="nav-link" href="#book-appointment">Book appointment</a></li>
+      <li id="book-appointment-nav" class="nav-item"><a class="nav-link" href="#book-appointment">Book appointment</a></li>
     </ul>
   </nav>
 
@@ -91,7 +91,7 @@
       <div id="address">
         <a href="https://www.google.com/maps/place/Austin,+TX/@30.3074624,-98.0359321,10z/data=!3m1!4b1!4m5!3m4!1s0x8644b599a0cc032f:0x5d9b464bd469d57a!8m2!3d30.267153!4d-97.7430608" target="_blank">Find us: <span class="tel-email">Austin, Texas</span></a>
         <a href="tel:5556667777">Call us: <span class="tel-email">555-666-7777</span></a>
-        <a id="email" href = "mailto: MagnataAndGallo@gmail.com">Email us: <span class="tel-email">MagnataAndGallo@gmail.com</span></a>
+        <a id="email-us" href = "mailto: MagnataAndGallo@gmail.com">Email us: <span class="tel-email">MagnataAndGallo@gmail.com</span></a>
         <div id="operational-hours">
           <p>Hours of Operation:</p>
           <p>Monday–Friday: 8:00AM–17:00PM EST</p>
@@ -174,21 +174,23 @@
         
         <div id="your-details">
           <p class="form-title">YOUR DETAILS</p>
-          <label for="title">Title: </label>
-          <select id="title" name="title">
-            <option value="Mr">Mr</option>
-            <option value="Ms">Ms</option>
-            <option value="Mrs">Mrs</option>
-            <option value="Miss">Miss</option>
-          </select>
-          <br>
+          
+          <div id="title-container">
+            <label for="title">Title: </label>
+            <select id="title" name="title">
+              <option value="Mr">Mr</option>
+              <option value="Ms">Ms</option>
+              <option value="Mrs">Mrs</option>
+              <option value="Miss">Miss</option>
+            </select>
+          </div>
   
           <input id="first-name" name="first-name" type="text" placeholder="First name" required>
           <input id="last-name" name="last-name" type="text" placeholder="Last name" required>
           <br>
   
           <input id="email" type="email" name="email" placeholder="Email" required>
-          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Telephone number" required>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Telephone" required>
           <br>
 
           <div class="checkbox-container">

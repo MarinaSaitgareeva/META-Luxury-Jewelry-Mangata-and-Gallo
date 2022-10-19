@@ -63,6 +63,24 @@ header {
   padding: 1rem;
 }
 
+@media only screen and (max-width: 475px) {
+  #logo-big {
+    width: 25rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #logo-big {
+    width: 22rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #logo-big {
+    width: 19rem;
+  }
+}
+
 /* Set style to Navigation bar */
 nav {
   position: fixed;
@@ -102,6 +120,24 @@ nav {
 
 .nav-link:hover {
   color: #0f3e5c;
+}
+
+@media only screen and (max-width: 600px) {
+  #nav-list {
+    gap: 2%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #promotion-nav {
+  display: none;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  #book-appointment-nav {
+  display: none;
+  }
 }
 
 /* Set style to Main */
@@ -197,6 +233,57 @@ article {
   transition: 0.2s all ease-in-out;
 }
 
+@media only screen and (max-width: 1400px) {
+  article {
+    grid-template-rows: 60% 5% 30% 5%;
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  article {
+    grid-template-rows: 55% 5% 35% 5%;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  article {
+    grid-template-rows: 50% 5% 40% 5%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  article {
+    grid-template-rows: 45% 5% 45% 5%;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  article {
+    grid-template-rows: 40% 5% 50% 5%;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  #info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  article {
+    grid-template-rows: 45% 5% 45% 5%;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  #info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  article {
+    grid-template-rows: 60% 5% 30% 5%;
+  }
+}
+
+
 article:hover {
   transform: scale(1.01);
   box-shadow: 0 0 1rem 0 rgb(50 50 50 / 10%);
@@ -277,6 +364,39 @@ article:hover {
   padding: 2rem;
 }
 
+@media only screen and (max-width: 1400px) {
+  #about-img {
+    height: 70%;
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  #about-img {
+    height: 60%;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  #about-img {
+    grid-row: span 1;
+    height: 80%;
+  }
+
+  #about-text {
+    grid-column: span 2;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  #about {
+    grid-template-columns: 1fr;
+  }
+
+  #about-text {
+    grid-column: span 1;
+  }
+}
+
 
 /* Set style to Contact section */
 #contact {
@@ -285,6 +405,7 @@ article:hover {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  flex-wrap: wrap;
 
   padding: 1rem;
 }
@@ -383,6 +504,32 @@ article:hover {
   transform: scale(1.5);
 }
 
+@media only screen and (max-width: 1000px) {
+  #contact {
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
+  #subscribe {
+    flex-basis: 70%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #map {
+    width: 40%;
+  
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  #map {
+    width: 60%;
+
+    margin-left: 0;
+  }
+}
 
 /* Set style to Book appointment section */
 #book-appointment {
@@ -407,10 +554,10 @@ article:hover {
 
 .form-title {
   font-family: 'Handlee', cursive;
+  text-align: center;
 
   margin-bottom: 1rem;
 }
-
 
 #type,
 #date,
@@ -440,6 +587,47 @@ article:hover {
   height: 1rem;
 
   margin: 0 1rem 1rem 0;
+}
+
+#title-container {
+  text-align: center;
+
+  margin-bottom: 0.5rem;
+}
+
+#title {
+  width: 6rem;
+  height: 2rem;
+
+  background-color: #fff;
+  border: 1px solid #CFD8DC;
+  border-radius: 2rem;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  color: #263238;
+  text-align: center;
+
+  margin: 0.3rem 0 0.3rem 1rem;
+}
+
+#first-name,
+#last-name,
+#email,
+#phone {
+  width: 12rem;
+  height: 2rem;
+
+  background-color: #fff;
+  border: 1px solid #CFD8DC;
+  border-radius: 2rem;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  color: #263238;
+  text-align: center;
+
+  margin: 0.3rem 0 0.3rem 1rem;
 }
 
 .checkbox-container {
@@ -489,8 +677,80 @@ article:hover {
   box-shadow: 0 0 1rem 0 rgb(50 50 50 / 60%);
 }
 
+@media only screen and (max-width: 1440px) {
+  #book-appointment {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  #book-appointment {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  #book-appointment {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  #type,
+  #date,
+  #time {
+    width: 10rem;
+  }
+
+  #first-name,
+  #last-name,
+  #email,
+  #phone {
+    width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #type,
+  #date,
+  #time {
+    width: 8rem;
+  }
+
+  #first-name,
+  #last-name,
+  #email,
+  #phone {
+    width: 8rem;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  #appointment-form {
+    grid-template-columns: 40% 60%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #appointment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #your-details {
+    text-align: center;
+  }
+
+  .checkbox-container {
+    justify-items: center;
+  }
+}
+
+
 /* Set style to Footer */
 footer {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -506,4 +766,10 @@ footer {
 #logo-small {
   width: 3rem;
   height: 1.5rem;
+}
+
+@media only screen and (max-width: 400px) {
+  footer {
+    font-size: 0.6rem;
+  }
 }
