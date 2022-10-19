@@ -44,7 +44,6 @@ body {
 header {
   position: fixed;
   top: 0;
-
   z-index: 99;
   width: 100%;
   height: 4rem;
@@ -147,14 +146,16 @@ main {
   gap: 2rem;
   align-items: center;
   justify-content: center;
+
   padding: 1rem;
   margin-top: 5rem;
 }
 
 .separate-line {
   width: 97%;
-  border: 0;
   height: 1px;
+
+  border: 0;
   background-image: linear-gradient(to right, #7FBCD2, #06283D, #7FBCD2);
   opacity: 0.2;
 
@@ -164,13 +165,12 @@ main {
 
 /* Set style to Promotion section */
 #promotion {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-
-  width: 100%;
 
   text-align: center;
 
@@ -205,12 +205,12 @@ main {
 
 /* Set style to Info section */
 #info {
+  height: fit-content;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 1fr;
   gap: 1rem;
-
-  height: fit-content;
 
   text-align: justify;
   text-justify: inter-word;
@@ -300,13 +300,16 @@ article:hover {
 .info-image {
   width: 100%;
   height: 100%;
+
   border-radius: 1rem;
 }
 
 .info-text {
   align-self: stretch;
+
   font-size: 0.9rem;
   text-align: center;
+
   margin: 2.5rem 0 0.5rem;
 }
 
@@ -320,7 +323,6 @@ article:hover {
   margin-bottom: 0.5rem;
 
   cursor: pointer;
-
   transition: all 0.3s ease-in-out;
 }
 
@@ -331,31 +333,31 @@ article:hover {
 
 /* Set style to About section */
 #about {
+  height: fit-content;
+
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-items: center;
   gap: 1rem;
 
-  height: fit-content;
-
   padding: 0.5rem;
 }
 
 #about-img {
+  height: 85%;
+
   grid-row: span 2;
   align-self: center;
-
-  height: 85%;
 
   border-radius: 1rem;
 }
 
 #about-text {
+  height: fit-content;
+
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
-  height: fit-content;
 
   font-size: 0.85rem;
   text-align: justify;
@@ -401,6 +403,7 @@ article:hover {
 /* Set style to Contact section */
 #contact {
   width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -452,6 +455,7 @@ article:hover {
 #subscribe-input {
   width: 12rem;
   height: 2rem;
+
   background-color: #fff;
   border: 1px solid #CFD8DC;
   border-radius: 2rem;
@@ -473,7 +477,6 @@ article:hover {
   padding: 0.5rem 0;
 
   cursor: pointer;
-
   transition: 0.3s all ease-in-out;
 }
 
@@ -496,7 +499,6 @@ article:hover {
   opacity: 0.6;
 
   cursor: pointer;
-
   transition: 0.3s all ease-in-out;
 }
 
@@ -640,6 +642,7 @@ article:hover {
 
 .checkbox-container > span {
   width: 90%;
+
   font-size: 0.6rem;
   line-height: normal;
   text-align: justify;
@@ -667,7 +670,6 @@ article:hover {
   margin-top: 1rem;
 
   cursor: pointer;
-
   transition: 0.3s all ease-in-out;
 }
 
@@ -751,6 +753,7 @@ article:hover {
 /* Set style to Footer */
 footer {
   width: 100%;
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
